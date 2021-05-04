@@ -36,8 +36,28 @@ header {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 34.8rem;
-  top: 10.1rem;
+  left: 32rem;
+  top: 11rem;
+}
+
+.container__form .form__list > input {
+  width: 250px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.container__form .form__list > .btn__submit {
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  border-radius: 6px;
+  margin-left: .5rem;
+
 }
 
 .container__results {
