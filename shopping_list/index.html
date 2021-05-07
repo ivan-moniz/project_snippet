@@ -8,37 +8,33 @@
     <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
-     
     <header>
       <h1>Shopping List - App</h1>
       <div class="theme">
-        <button class="btn btn__toggle">change theme</button>
+        <button id="btnToggle" class="btn btn__toggle"></button>
       </div>
     </header>
     <div class="container">
       <div class="container__form">
         <form id="addForm" action="" class="form__list">
-          <input type="text" placeholder="Add a product" />
-          <button class="btn btn__submit" type="submit">Add</button>
+          <input id="newProduct" type="text" placeholder="Add a product" />
+          <button id="btnSubmit" class="btn btn__submit" type="submit">
+            Add
+          </button>
         </form>
       </div>
     </div>
 
     <div class="container__results">
-      <ul class="results__list">
+      <ul id="products" class="results__list">
         <li class="results">
-          Milk
-          <div>
-            <button class="btn btn__edit">E</button>
-            <button class="btn btn__delete">X</button>
-          </div>
+          <span>Milk</span>
+          <button class="btn-result btn__delete">x</button>
+          <button class="btn-result btn__edit">edit</button>
         </li>
-        <li class="results">Eggs</li>
-        <li class="results">Eggs</li>
-        <li class="results">Eggs</li>
       </ul>
     </div>
 
-    <script src="./index.js"></script>
+    <script defer src="./index.js"></script>
   </body>
 </html>
