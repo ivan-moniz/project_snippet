@@ -53,6 +53,6 @@ function removeItem(e) {
       products.removeChild(li);
     }
   }else if(e.target.classList.contains('btn__edit')) {
-    console.log(1);
+    
   }
 }
