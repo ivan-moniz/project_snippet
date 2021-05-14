@@ -1,17 +1,25 @@
-const imgOne = document.getElementById("imageOne");
+const images = document.querySelectorAll("img");
 
 let clicked = false;
 
-imgOne.addEventListener("click", unblur);
+for (const index of images) {
+  index.addEventListener("click", unblur);
+}
 
 function unblur(e) {
   e.preventDefault();
+  console.log(2);
 
-  if (!clicked) {
-    clicked = true;
-    imgOne.src = "./images/zero.jpg";
-  } else {
-    clicked = false;
-    imgOne.src = "./images/zeroblur.jpg";
-  }
+  let image = e.target;
+  let name = image.id;
+  name = `./images/${name}.jpg`;
+  image.src = name;
+
+  setTimeout(reblur, 2000, image);
+}
+
+function reblur(image) {
+  let name = image.id;
+  name = `./images/${name}blur.jpg`;
+  image.src = name;
 }
