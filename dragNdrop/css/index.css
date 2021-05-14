@@ -1,0 +1,35 @@
+body {
+  background-color: rebeccapurple;
+}
+
+.fill {
+  background-image: url("../images/computer.jpg");
+  height: 150px;
+  width: 150px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: 3px solid rebeccapurple solid;
+  background-color: #fff;
+}
+
+.hold {
+  border: solid 4px #ccc;
+}
+
+.hovered {
+  background: #fff;
+  border-style: dashed;
+}
+
+.invisible {
+  display: none;
+}
