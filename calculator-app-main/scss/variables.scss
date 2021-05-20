@@ -1,0 +1,61 @@
+// Breakpoints
+$mobile: 375px;
+$tablet: 662px;
+$desktop: 1440px;
+// Theme 1
+// Backgrounds
+$theme1-main-background: hsl(222, 26%, 31%);
+$theme1-keypad-and-toggle-background: hsl(223, 31%, 20%);
+$theme1-screen-background: hsl(224, 36%, 15%);
+// Keys
+$theme1-key-background-primary: hsl(225, 21%, 49%);
+$theme1-key-shadow-primary: hsl(224, 28%, 35%);
+$theme1-key-background-secondary: hsl(30, 25%, 89%);
+$theme1-key-shadow-secondary: hsl(28, 16%, 65%);
+$theme1-key-background-teritary: hsl(6, 63%, 50%);
+$theme1-key-shadow-teritary: hsl(6, 70%, 34%);
+// Text
+$theme1-primary-text-color: hsl(0, 0, 100%);
+$theme1-secondary-text-color: hsl(221, 14%, 31%);
+$theme1-toggle-color: hsl(6, 70%, 34%);
+//
+//
+// Theme 2
+// Backgrounds
+$theme2-main-background: hsl(0, 0%, 90%);
+$theme2-keypad-and-toggle-background: hsl(0, 5%, 81%);
+$theme2-screen-background: hsl(0, 0%, 93%);
+// Keys
+$theme2-key-background-primary: hsl(185, 42%, 37%);
+$theme2-key-shadow-primary: hsl(185, 58%, 25%);
+$theme2-key-background-secondary: hsl(45, 7%, 89%);
+$theme2-key-shadow-secondary: hsl(35, 11%, 61%);
+$theme2-key-background-teritary: hsl(25, 98%, 40%);
+$theme2-key-shadow-teritary: hsl(25, 99%, 27%);
+// Text
+$theme2-primary-text-color: hsl(0, 0, 100%);
+$theme2-secondary-text-color: hsl(60, 10%, 19%);
+$theme2-toggle-color: hsl(25, 98%, 40%);
+//
+//
+// Theme 3
+// Backgrounds
+$theme3-main-background: hsl(268, 75%, 9%);
+$theme3-keypad-and-toggle-background: hsl(268, 71%, 12%);
+$theme3-screen-background: hsl(268, 71%, 12%);
+// Keys
+$theme3-key-background-primary: hsl(281, 89%, 26%);
+$theme3-key-shadow-primary: hsl(285, 91%, 52%);
+$theme3-key-background-secondary: hsl(268, 47%, 21%);
+$theme3-key-shadow-secondary: hsl(290, 70%, 36%);
+$theme3-key-background-teritary: hsl(176, 100%, 44%);
+$theme3-key-shadow-teritary: hsl(177, 92%, 70%);
+// Text
+$theme3-primary-text-color: hsl(60, 10%, 19%);
+$theme3-secondary-text-color: hsl(52, 100%, 62%);
+$theme3-teritary-text-color: hsl(0, 0, 100%);
+$theme3-toggle-color: hsl(176, 100%, 44%);
+// Body Copy
+$input-number-size: 48px;
+$button-number-size: 32px;
+$slider-number-size: 14px;

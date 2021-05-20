@@ -11,51 +11,101 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link type="text/css" rel="stylesheet" href="./dist/css/style.min.css" />
+    <link type="text/css" rel="stylesheet" href="#" />
 
     <title>Frontend Mentor | Calculator app</title>
   </head>
   <body>
-    <main class="section theme-1">
-      <div class="container">
-        <div class="container__top">
-          <h1 class="container__title">calc</h1>
-          <div class="container__theme">
-            <p class="container__theme__description">Theme</p>
-            <div class="theme">
-              <input type="checkbox" value="2" />
-              <input type="checkbox" value="3" />
+    <main class="container">
+      <!-- Title and theme section -->
+      <section class="section1">
+        <h2 class="section1__title">calc</h2>
+        <div class="section1__theme">
+          <p class="section1__description">Theme</p>
+        </div>
+        <div class="theme__changer">
+          <div class="theme__label">
+            <label class="slide-number" for="theme1-radio">1</label>
+            <label class="slide-number" for="theme2-radio">2</label>
+            <label class="slide-number" for="theme3-radio">3</label>
+          </div>
+
+          <div class="theme__selection">
+            <div class="radio-container">
+              <input
+                type="radio"
+                name="theme-radio"
+                class="theme-radio"
+                id="theme1-radio"
+                value="1"
+                checked="checked"
+              />
+              <span class="checkmark"></span>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                name="theme-radio"
+                class="theme-radio"
+                id="theme2-radio"
+                value="2"
+              />
+              <span class="checkmark"></span>
+            </div>
+            <div class="radio-container">
+              <input
+                type="radio"
+                name="theme-radio"
+                class="theme-radio"
+                id="theme3-radio"
+                value="3"
+              />
+              <span class="checkmark"></span>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="container__display">
-          <input type="text" class="display__view" disabled />
-        </div>
+      <section class="section2">
+        <div data-previous-operand class="previous-operand"></div>
+        <!-- <div data-current-operand class="previous-operand">123</div> -->
+        <!-- <input data-curreent-operand class="screen" type="text" name="calcInput" id="calcInput" value="0" readonly maxlength="10" max="999999999"> -->
+        <div class="current-operand" data-current-operand>0</div>
+      </section>
 
-        <div class="container__keys">
-          <button class="btn__keys">7</button>
-          <button class="btn__keys">8</button>
-          <button class="btn__keys">9</button>
-          <button class="btn__keys">del</button>
-          <button class="btn__keys">4</button>
-          <button class="btn__keys">5</button>
-          <button class="btn__keys">6</button>
-          <button class="btn__keys">+</button>
-          <button class="btn__keys">1</button>
-          <button class="btn__keys">2</button>
-          <button class="btn__keys">3</button>
-          <button class="btn__keys">-</button>
-          <button class="btn__keys">.</button>
-          <button class="btn__keys">0</button>
-          <button class="btn__keys">/</button>
-          <button class="btn__keys">x</button>
-          <button class="btn__reset">Reset</button>
-          <button class="btn__equal">=</button>
-        </div>
-      </div>
+      <section class="section3 key-container">
+         <!-- <div class="row1"> -->
+          <button class="calc-button main-btn" data-number>7</button>
+          <button class="calc-button main-btn" data-number>8</button>
+          <button class="calc-button main-btn" data-number>9</button>
+          <button class="calc-button action-btn" data-delete>DEL</button>
+          <!-- </div> -->
+          <!-- <div class="row2"> -->
+          <button class="calc-button main-btn" data-number>4</button>
+          <button class="calc-button main-btn" data-number>5</button>
+          <button class="calc-button main-btn" data-number>6</button>
+          <button class="calc-button main-btn" data-operator>+</button>
+          <!-- </div> -->
+          <!-- <div class="row3"> -->
+          <button class="calc-button main-btn" data-number>1</button>
+          <button class="calc-button main-btn" data-number>2</button>
+          <button class="calc-button main-btn" data-number>3</button>
+          <button class="calc-button main-btn" data-operator>-</button>
+          <!-- </div> -->
+          <!-- <div class="row4"> -->
+          <button class="calc-button main-btn" data-number>.</button>
+          <button class="calc-button main-btn" data-number>0</button>
+          <button class="calc-button main-btn" data-operator>/</button>
+          <button class="calc-button main-btn" data-operator>*</button>
+          <!-- </div> -->
+          <!-- <div class="row5"> -->
+          <button class="calc-button action-btn reset-btn" data-reset>RESET</button>
+          <button class="calc-button sum-btn" data-equals>=</button>
+          <!-- </div> -->
+      </section>
     </main>
 
-    <script src="./script.js"></script>
+    <script type="text/javascript" src="./script.js" ></script>
   </body>
 </html>
