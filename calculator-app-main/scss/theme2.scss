@@ -10,10 +10,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.05rem;
     &__title {
       color: $theme2-secondary-text-color;
       font-size: $button-number-size;
+      position: relative;
+      top: 30px;
     }
     &__theme {
       display: flex;
@@ -22,6 +24,9 @@ body {
       & .section1__description {
         color: $theme2-secondary-text-color;
         font-size: $slider-number-size;
+        position: relative;
+        left: 90px;
+        top: 5px;
       }
     }
     .theme__changer {
@@ -98,7 +103,7 @@ body {
     grid-row-gap: 1rem;
     justify-content: center;
     align-content: center;
-    width: 100%;
+    width: 380px;
     & .reset-btn {
       grid-column: span 2;
     }
