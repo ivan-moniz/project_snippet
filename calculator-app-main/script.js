@@ -1,5 +1,5 @@
 const getStylesheet = document.querySelector('link[href="#"]');
-const themeRadioBtns = document.querySelectorAll('.theme-radio')
+const themeRadioBtns = document.querySelectorAll('.theme-radio');
 const numbers = document.querySelectorAll('[data-number]');
 
 numbers.addEventListener('click', calcInit)
